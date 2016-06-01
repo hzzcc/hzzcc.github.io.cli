@@ -39,13 +39,14 @@ tags: ['http协议']
 ##### 2. Host
 
 - 说明：
-> 请求的web服务器域名地址
+  >请求的web服务器域名地址
 
 ##### 3. User-Agent
 - 说明：
->HTTP客户端运行的浏览器类型的详细信息。通过该头部信息，web服务器可以判断到当前HTTP请求的客户端浏览器类别。
+  >HTTP客户端运行的浏览器类型的详细信息。通过该头部信息，web服务器可以判断到当前HTTP请求的客户端浏览器类别。
+
 - 实例：
->User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+  >User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
 
 ##### 4. Accept
 - 说明：
