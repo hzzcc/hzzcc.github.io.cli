@@ -37,14 +37,15 @@ tags: ['http协议']
   >在Ajax中，对应method属性设置。
 
 ##### 2. Host
+
 - 说明：
->请求的web服务器域名地址
+> 请求的web服务器域名地址
 
 ##### 3. User-Agent
 - 说明：
 >HTTP客户端运行的浏览器类型的详细信息。通过该头部信息，web服务器可以判断到当前HTTP请求的客户端浏览器类别。
-实例：
-User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
+- 实例：
+>User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11
 
 ##### 4. Accept
 - 说明：
@@ -65,7 +66,7 @@ User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.1.11) Gecko/2
 
 ##### 6. Accept-Encoding
 - 说明：
->指定客户端浏览器可以支持的web服务器返回内容压缩编码类型。表示允许服务器在将输出内容发送到客户端以前进行压缩，以节约带宽。而这里设置的就是客户端浏览器所能够支持的返回压缩格式。
+> 指定客户端浏览器可以支持的web服务器返回内容压缩编码类型。表示允许服务器在将输出内容发送到客户端以前进行压缩，以节约带宽。而这里设置的就是客户端浏览器所能够支持的返回压缩格式。
 
 - 实例：
 >Accept-Encoding: gzip,deflate
@@ -82,10 +83,10 @@ User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.1.11) Gecko/2
 
 ##### 8. Content-Type
 - 说明：
->显示此HTTP请求提交的内容类型。一般只有post提交时才需要设置该属性。
+  >显示此HTTP请求提交的内容类型。一般只有post提交时才需要设置该属性。
 
 - 实例：
-Content-type: application/x-www-form-urlencoded;charset:UTF-8
+  >Content-type: application/x-www-form-urlencoded;charset:UTF-8
 
 - 有关Content-Type属性值可以如下两种编码类型：
   > - “application/x-www-form-urlencoded”： 表单数据向服务器提交时所采用的编码类型，默认的缺省值就是“application/x-www-form-urlencoded”。 然而，在向服务器发送大量的文本、包含非ASCII字符的文本或二进制数据时这种编码方式效率很低。
@@ -114,9 +115,11 @@ Content-type: application/x-www-form-urlencoded;charset:UTF-8
 - 说明：
 >HTTP请求发送时，会把保存在该请求域名下的所有cookie值一起发送给web服务器。
 
+
 ##### 12. Referer
 - 说明：
 >包含一个URL，用户从该URL代表的页面出发访问当前请求的页面
+
 
 #### 二、Responses 的 header 部分
 
