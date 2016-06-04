@@ -2,6 +2,7 @@
 title: React Native 性能优化
 date: 2016-06-04 20:24:33
 tags: ["React Native"]
+
 ---
 
 React native 是facebook提供的可媲美原生应用的js框架，但是做一些性能优化还是有必要的。参考官方文档，列出了以下优化点。
@@ -69,26 +70,21 @@ React native 是facebook提供的可媲美原生应用的js框架，但是做一
 
 ### 4. ListView数据加载的优化
 
-##### initialListSize
-
+- initialListSize
 这个属性会规定在第一次render时有多少行单元需要render，如果我们想尽快显示数据，我们可以设置initialListSize为1，我们就可以很快的看到其他的行会依次填充。而一屏界面有多少行取决于pageSize属性
 
-##### pageSize
-
+- pageSize
 ListView 根据 pageSize 决定每屏显示多少行，默认值为1
 
-##### scrollRenderAheadDistance
-
+- scrollRenderAheadDistance
 在行单元显示出来时多早之前开始渲染。
 如果我们有2000行单元，如果把它们都立即渲染出来会消耗大量内存和运算资源。也有可能导致非常糟糕的丢帧。所以scrollRenderAheadDistance允许我们指定在当前窗口需要继续渲染多远的行单元。
 
-##### removeClippedSubviews
-
+- removeClippedSubviews
 当值为true时，不在界面显示的视图（那些overflow为true的）都被原生的父级组件移除了。这可以改善长列表的滚动性能。默认值是true。（在 0.14-rc之前的版本上是false）。
 这是在大列表上的非常大的优化点。android上overflow属性的值一直是hidden，所以你不用担心去设值。但是在iOS上你需要保证你给每行的容器设置了overflow: hidden。
 
-##### rowHasChanged
-
+- rowHasChanged
 你必须提供rowHasChanged来决定每一行是否需要重新render。如果你使用了immutable 数据结构，直接使用全等检查就可以了。
 
 ### 5. 移动view（滚动，转换，旋转）导致FPS下降

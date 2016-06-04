@@ -2,6 +2,8 @@
 title: React Native 打包失败
 date: 2016-05-28 22:17:32
 tags: [React Native]
+toc: false
+
 ---
 
 一般我们在打包时，下面命令就可以了
