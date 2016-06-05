@@ -23,9 +23,7 @@
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
-      <% } else { if (post.toc !== false) {%>
-        <%- partial('post/toc') %>
-      <% } %>
+      <% } else { %>
         <%- post.content %>
       <% } %>
     </div>

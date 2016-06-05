@@ -9,6 +9,8 @@ React native 是facebook提供的可媲美原生应用的js框架，但是做一
 
 <!-- more -->
 
+<!-- toc -->
+
 ### 1. Navigator页面切换动画优化
 
 使用InteractionManager，navigator切换完成会触发使用InteractionManager.runAfterInteractions的回调函数，你的组件可以写成这样：
