@@ -2,7 +2,8 @@
 menu:
   主页: /
   所有文章: /archives
-  # 随笔: /tags/随笔
+  "React Native": /tags/React-Native
+  git: /tags/git
 
 # SubNav
 subnav:
